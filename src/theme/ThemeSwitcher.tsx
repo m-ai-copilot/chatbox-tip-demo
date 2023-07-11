@@ -29,6 +29,7 @@ function getThemeModeFromLocal<T>(key: string, defaultValue: T) {
 }
 
 export function ThemeSwitcherProvider(props: ThemeSwitcherProviderProps) {
+    console.log('ThemeSwitcherProvider');
     const { settings } = useStore();
     const [mode, setMode] = useState<ThemeMode>(getThemeModeFromLocal(THEME_MODE, ThemeMode.System));
     // `shouldUseDarkColors` becomes asynchronous after being called by tauri,

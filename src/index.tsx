@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ReactGA from "react-ga4";
@@ -10,14 +11,54 @@ import './i18n.js'
 import './styles/index.css'
 import './styles/index.scss'
 
+import { createRoot } from 'react-dom/client'
+
+//const root = createRoot(document.getElementById('root')!)
+
+// root.render(<Select />)
+
+
 const root = ReactDOM.createRoot(
-    document.getElementById('root') as HTMLElement
+    document.getElementById('select') as HTMLElement
 );
+
+// const TestComponent = () => {
+//     return (
+//       <div>
+//         This is a test component.
+//       </div>
+//     );
+//   };
+  
+// root.render(<TestComponent />);
+
+//root.render( <App />);
+
+
+
+
+console.log("root:")
+console.log(root)
+
 root.render(
     <React.StrictMode>
         <App />
-    </React.StrictMode>
+    </React.StrictMode>,
 );
+
+
+// ReactDOM.render(
+//     <React.StrictMode>
+//       <App />
+//     </React.StrictMode>,
+//     document.getElementById('root')
+//   );
+
+// root.render(
+//     <React.StrictMode>
+//         <App />
+//     </React.StrictMode>
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

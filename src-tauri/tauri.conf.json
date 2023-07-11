@@ -1,10 +1,11 @@
 {
     "$schema": "../node_modules/@tauri-apps/cli/schema.json",
     "build": {
-        "beforeBuildCommand": "npm run build:react",
-        "beforeDevCommand": "cross-env BROWSER=none npm run start:react",
+        "beforeDevCommand": "npm run dev",
+        "beforeBuildCommand": "npm run build",        
+
         "devPath": "http://localhost:3000",
-        "distDir": "../build",
+        "distDir": "../dist",
         "withGlobalTauri": true
     },
     "package": {
@@ -96,6 +97,7 @@
         },
         "windows": [
             {
+                "url": "src/index.html",
                 "fullscreen": false,
                 "height": 800,
                 "resizable": true,

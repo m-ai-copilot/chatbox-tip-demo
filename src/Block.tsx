@@ -1,5 +1,4 @@
 import { useState, useMemo, useCallback } from 'react';
-import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import MenuItem from '@mui/material/MenuItem';
 import {
@@ -29,6 +28,8 @@ import { Message, OpenAIRoleEnum, OpenAIRoleEnumType } from './types';
 import ReplayIcon from '@mui/icons-material/Replay';
 import CopyAllIcon from '@mui/icons-material/CopyAll';
 import './styles/Block.scss'
+
+import Box from '@mui/material/Box';
 
 const md = new MarkdownIt({
     linkify: true,

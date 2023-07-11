@@ -794,7 +794,8 @@ function sortSessions(sessions: Session[]): Session[] {
 }
 
 export default function App() {
-    return (
+    console.log('render App')
+    return (        
         <ThemeSwitcherProvider>
             <Main />
         </ThemeSwitcherProvider>
